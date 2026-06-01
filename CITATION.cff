@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Wei"
+  given-names: "BinQing"
+  orcid: "https://orcid.org/0000-0002-3654-3459"
+title: "An Agent Skill for Scalable and Customizable OpenFE Deployment"
+version: 1.0
+date-released: 2026-05-15
+repository-code: "https://github.com/Genentech/openfe_skill"

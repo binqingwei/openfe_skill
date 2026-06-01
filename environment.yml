@@ -1,0 +1,37 @@
+# Conda environment for openfe_skill
+#
+# Install with:
+#   conda env create -f environment.yml
+#   conda activate openfe_skill
+#
+# Or update an existing environment:
+#   conda env update -f environment.yml --prune
+#
+# Required by scripts:
+#   plan_network_multicpu.py   -- openfe, kartograf, openff-units, rdkit, click
+#   input_validation.py        -- openfe
+#   create_SepTop_transformations.py -- openfe
+#   split_sdf_by_ID_root.py    -- rdkit (part of openfe installation)
+#   plot_ddG_comparison_ofe.py -- openfe, numpy, pandas, scipy, matplotlib, seaborn
+
+name: openfe_skill
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # --- Core free energy package (brings in gufe, kartograf, openff-units,
+  #     rdkit, click, and openmm as transitive dependencies) ---
+  - openfe >= 1.0
+
+  # --- Plotting (not pulled in by openfe itself) ---
+  - matplotlib
+  - seaborn
+  - pandas
+
+  # --- Already pulled in by openfe, listed explicitly for clarity ---
+  - numpy
+  - scipy
+  - rdkit
+  - click
