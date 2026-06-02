@@ -190,4 +190,4 @@ SBATCH_GATHER_RESULTS=(
 #   cluster. check_config.sh will fail until this is "true".
 # -----------------------------------------------------------------------------
 export OPENFE_HPC_CONFIG_LOADED=1
-export SITE_CONFIGURED=true
+export SITE_CONFIGURED=false
